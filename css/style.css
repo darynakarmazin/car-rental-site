@@ -633,9 +633,87 @@ img {
   background: var(--primary, #b68867);
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .main-section {
     padding-top: 76px;
+  }
+  .first-step .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 32px;
+  }
+  .first-step__image {
+    width: 50%;
+  }
+  /* .first-step__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(40px);
+    border-radius: 361px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: cover;
+    z-index: 1;
+  }
+  .first-step__image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    filter: blur(40px);
+    border-radius: 361px;
+    background: var(--black, #121214);
+    background-size: cover;
+    z-index: 2;
+  }
+  .first-step__image-wrapper {
+    width: 100%;
+    aspect-ratio: 361/188;
+    background-image: url(../assets/images/mob-step-car.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    z-index: 3;
+  } */
+  .first-step .first-step__info .first-step__info-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .first-step .first-step__info-price {
+    margin-bottom: 32px;
+  }
+  .first-step .first-step__info-pricelist {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .first-step .first-step__info-pricelist h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .first-step .first-step__info-pricelist ul {
+    gap: 8px;
+  }
+  .first-step .first-step__info-pricelist ul li {
+    font-weight: 300;
+    line-height: normal;
+  }
+  .accent-btn {
+    width: 197px;
+    margin: 0 auto;
   }
 }
 
