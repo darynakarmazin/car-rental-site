@@ -412,6 +412,14 @@ img {
   .header .header-container .header-menu li:last-child {
     margin-left: auto;
   }
+  .header .header-container .header-menu li:last-child div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .header .header-container .header-menu li:last-child div a:hover::after {
+    display: none;
+  }
   .header
     .header-container
     .header-menu
