@@ -14,5 +14,4 @@ approach. For formation, used Prettier. Used [Inter, Oxygen] fonts. Deployed on 
 
 ![Og-image](https://github.com/darynakarmazin/ape-nft/raw/main/src/img/og-image/og.png)
 
-Technology stack [React, Typescript, Git, html5, styled-components, gh-pages,
-css3, react-icons, css-variables, react-responsive, react-hooks, usestate]
+Technology stack [HTML5, CSS, JavaScript]
