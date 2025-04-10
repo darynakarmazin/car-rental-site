@@ -4,10 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Rent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300,400,500,600,700&family=Oxygen:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header><div class="container"></div></header>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-container__nav">
+          <a class="header-logo" href="/"
+            ><img src="./assets/icons/logo.svg" alt="company logo"
+          /></a>
+          <ul class="header-menu">
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Rental Policies</a></li>
+            <li><a href="#">Blog&Guides</a></li>
+            <li>
+              <div class="dropdown header-menu-dropdown">
+                <ul class="dropdown-list">
+                  <li class="dropdown-list-item" data-value="ua">
+                    <a href="#"> UA </a>
+                  </li>
+                  <li class="dropdown-list-item" data-value="en">
+                    <a href="#"> EN </a>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="dropdown-button"
+                  aria-label="Open localization menu"
+                >
+                  UA
+                </button>
+              </div>
+            </li>
+          </ul>
+          <button class="burger-btn" aria-label="open burger menu button">
+            <svg
+              class="burger-icon"
+              width="26"
+              height="26"
+              viewBox="0 0 26 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="burger-line">
+                <path
+                  id="line1"
+                  d="M0 1H26"
+                  stroke="#568E3E"
+                  stroke-width="1.5"
+                />
+                <path
+                  id="line0"
+                  d="M0 9H26"
+                  stroke="#568E3E"
+                  stroke-width="1.5"
+                />
+                <path
+                  id="line2"
+                  d="M0 17H26"
+                  stroke="#568E3E"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="burger-menu">
+      <div class="container burger-container">
+        <ul class="header-menu nav-menu">
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Rental Policies</a></li>
+          <li><a href="#">Blog&Guides</a></li>
+        </ul>
+        <div class="burger-container-lang">
+          Мова:
+          <div class="dropdown header-menu-dropdown">
+            <ul class="dropdown-list">
+              <li class="dropdown-list-item" data-value="ua">
+                <a href="#">EN</a>
+              </li>
+              <li class="dropdown-list-item" data-value="en">
+                <a href="#">UA</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="dropdown-button"
+              aria-label="Open localization menu"
+            >
+              UA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <section><div class="container"></div></section>
     </main>
