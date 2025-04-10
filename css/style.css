@@ -431,3 +431,40 @@ img {
     display: none;
   }
 }
+
+/* breadcrumbs-section */
+
+.breadcrumbs-section {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .breadcrumbs-section {
+    display: block;
+    padding-top: 136px;
+  }
+  .breadcrumbs-section__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--white-50, #919192);
+    line-height: 1.5;
+  }
+  .breadcrumbs-section__wrapper a {
+    position: relative;
+    padding-right: 20px;
+  }
+  .breadcrumbs-section__wrapper a::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url(../assets/icons/chevron-right.svg);
+    background-repeat: no-repeat;
+  }
+  .breadcrumbs-section__wrapper p {
+    color: var(--white-90, #e9e9e9);
+  }
+}
