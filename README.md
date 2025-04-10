@@ -1,4 +1,4 @@
-# car-rental-site
+# Car rental site
 Responsive web site for car rental company
 
 ## Tecnical requirements
