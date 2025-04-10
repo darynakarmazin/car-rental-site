@@ -10,7 +10,7 @@ https://www.figma.com/design/OgrCbbekQEfnHdfHavtBDu/car-rent-test-task?node-id=2
 ## Learn More
 
 The layout is adaptive and cross-browser - mobile and 393px, tablet - 768px, desktop - 1280px. Used the Mobile first
-approach. For formation, used Prettier. Used [Inter, Oxygen] fonts. Deployed on gh-pages.
+approach. For formation, used Prettier. Used [Inter, Oxygen] Google fonts. Deployed on gh-pages.
 
 ![Og-image](https://github.com/darynakarmazin/ape-nft/raw/main/src/img/og-image/og.png)
 
