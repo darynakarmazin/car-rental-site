@@ -476,6 +476,9 @@ img {
   padding-top: 52px;
   padding-bottom: 80px;
 }
+.first-step {
+  width: 100%;
+}
 .first-step .wrapper {
   display: flex;
   flex-direction: column;
@@ -644,50 +647,26 @@ img {
     justify-content: space-between;
     gap: 24px;
     padding-top: 32px;
+    margin-bottom: 40px;
   }
   .first-step__image {
     width: 50%;
   }
-  /* .first-step__image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(40px);
-    border-radius: 361px;
+  .first-step__image::before {
+    border-radius: 353px;
     background: radial-gradient(
       50% 50% at 50% 50%,
       rgba(255, 255, 255, 0.35) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-    background-size: cover;
-    z-index: 1;
   }
   .first-step__image::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    filter: blur(40px);
-    border-radius: 361px;
-    background: var(--black, #121214);
-    background-size: cover;
-    z-index: 2;
+    border-radius: 339px;
   }
   .first-step__image-wrapper {
-    width: 100%;
-    aspect-ratio: 361/188;
-    background-image: url(../assets/images/mob-step-car.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    position: relative;
-    z-index: 3;
-  } */
+    aspect-ratio: 344/187;
+    background-image: url(../assets/images/tab-step-car.webp);
+  }
   .first-step .first-step__info .first-step__info-title {
     font-size: 24px;
     margin-bottom: 16px;
@@ -719,7 +698,117 @@ img {
 
 @media screen and (min-width: 1440px) {
   .main-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
     padding-top: 40px;
     padding-bottom: 120px;
+  }
+  .main-section .main-section__inner {
+    display: flex;
+    max-width: 968px;
+    padding: 48px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 16px;
+    background: var(--white-05, #1e1e20);
+  }
+  .first-step .wrapper {
+    gap: 60px;
+    padding-top: 0;
+  }
+  .first-step__image::before {
+    border-radius: 461px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .first-step__image::after {
+    border-radius: 443px;
+  }
+  .first-step__image-wrapper {
+    aspect-ratio: 460/249;
+    background-image: url(../assets/images/desc-step-car.webp);
+  }
+  .first-step .first-step__info .first-step__info-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .first-step .first-step__info-price {
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  .first-step .first-step__info-pricelist {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .first-step .first-step__info-pricelist h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .first-step .first-step__info-pricelist ul {
+    gap: 8px;
+  }
+  .first-step .first-step__info-pricelist ul li {
+    font-weight: 300;
+    line-height: normal;
+  }
+  .first-step .first-step__info .first-step__info-title {
+    font-size: 32px;
+  }
+  .first-step .first-step__info-price {
+    font-size: 24px;
+  }
+  .proceed-btn {
+    display: none;
+  }
+}
+
+/* contactus-section */
+.contactus-section {
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(18, 18, 20, 0.3) 0%,
+      rgba(18, 18, 20, 0.3) 100%
+    ),
+    url(../assets/images/contact-us-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.contactus-section .contactus-section__container {
+  display: flex;
+  padding: 32px 32px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.contactus-section .contactus-section__container .accent-btn {
+  width: 140px;
+  height: 44px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contactus-section .contactus-section__container {
+    align-items: flex-start;
+    padding: 32px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contactus-section .contactus-section__container {
+    padding: 32px 32px 40px;
   }
 }
