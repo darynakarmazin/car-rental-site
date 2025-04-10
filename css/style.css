@@ -44,6 +44,7 @@ body {
   background-color: var(--black, #2f2f37);
   color: var(--white, #fefeff);
   font-style: normal;
+  font-size: 16px;
   font-family: "Inter", sans-serif;
 }
 
@@ -71,6 +72,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   font-family: inherit;
+  font-size: inherit;
   color: inherit;
   background-color: transparent;
   border: none;
@@ -466,5 +468,180 @@ img {
   }
   .breadcrumbs-section__wrapper p {
     color: var(--white-90, #e9e9e9);
+  }
+}
+
+/* main-section */
+.main-section {
+  padding-top: 52px;
+  padding-bottom: 80px;
+}
+.first-step .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 32px;
+}
+.first-step__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 361/242;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+.first-step__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  border-radius: 361px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: cover;
+  z-index: 1;
+}
+.first-step__image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  filter: blur(40px);
+  border-radius: 361px;
+  background: var(--black, #121214);
+  background-size: cover;
+  z-index: 2;
+}
+.first-step__image-wrapper {
+  width: 100%;
+  aspect-ratio: 361/188;
+  background-image: url(../assets/images/mob-step-car.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+  z-index: 3;
+}
+.first-step .first-step__info {
+  position: relative;
+  z-index: 3;
+}
+.first-step .first-step__info .first-step__info-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.first-step .first-step__info-price {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.first-step .first-step__info-pricelist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.first-step .first-step__info-pricelist h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+}
+.first-step .first-step__info-pricelist ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.first-step .first-step__info-pricelist ul li {
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 24px;
+  position: relative;
+}
+.first-step .first-step__info-pricelist ul li::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../assets/icons/check-circle-broken.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.first-step__info-featurelist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 302px;
+  gap: 4px 8px;
+}
+.first-step__info-featurelist li {
+  position: relative;
+  display: flex;
+  width: calc((100% - 8px) / 2);
+  padding: 4px 0px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 24px;
+}
+.first-step__info-featurelist li::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../assets/icons/check-circle-broken.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.first-step__info-featurelist li.doors::after {
+  background-image: url(../assets/icons/icon-car-doors.svg);
+}
+.first-step__info-featurelist li.suitcase::after {
+  background-image: url(../assets/icons/luggage-01.svg);
+}
+.first-step__info-featurelist li.manual::after {
+  background-image: url(../assets/icons/tabler_manual-gearbox.svg);
+}
+.first-step__info-featurelist li.passengers::after {
+  background-image: url(../assets/icons/users-01.svg);
+}
+.accent-btn {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--primary, #b68867);
+}
+
+@media screen and (min-width: 786px) {
+  .main-section {
+    padding-top: 76px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-section {
+    padding-top: 40px;
+    padding-bottom: 120px;
   }
 }
