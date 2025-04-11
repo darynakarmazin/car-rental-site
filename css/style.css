@@ -1070,6 +1070,54 @@ img {
   line-height: 1.5;
   margin-bottom: 24px;
 }
+.second-step__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.second-step__list li {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  min-height: 108px;
+  width: calc((100% - 8px) / 2);
+  border-radius: 8px;
+  background: var(--white-10, #39393b);
+}
+.second-step__list li div {
+  display: flex;
+  max-width: calc(100% - 33px);
+  flex-direction: column;
+  padding: 8px 8px 8px 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.second-step__list button {
+  display: flex;
+  width: 33px;
+  height: 100%;
+  padding: 14px 0px;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-20, #4f4f51);
+  position: relative;
+}
+.second-step__list button::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../assets/icons/plus.svg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second-step__list div p {
+  padding-top: 28px;
+  font-size: 14px;
+  line-height: 1.4;
+}
 
 @media screen and (min-width: 768px) {
   .second-step .second-step__progressbar__wrapper {
