@@ -5,3 +5,19 @@ buttons.forEach((button) => {
     parentLi.classList.toggle("active");
   });
 });
+
+const proceedButtons = document.querySelectorAll(".proceed-btn");
+proceedButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const currentStep = document.querySelector(".step-content.active");
+    const currentStepId = currentStep.id;
+    const currentStepNumber = parseInt(currentStepId.split("-")[1]);
+    const nextStepNumber = currentStepNumber + 1;
+    const nextStep = document.getElementById(`step-${nextStepNumber}`);
+    if (nextStep) {
+      currentStep.classList.remove("active");
+      nextStep.classList.add("active");
+    }
+  });
+});
+document.getElementById("step-1").classList.add("active");

@@ -476,6 +476,12 @@ img {
   padding-top: 52px;
   padding-bottom: 80px;
 }
+.step-content {
+  display: none;
+}
+.step-content.active {
+  display: block;
+}
 .first-step {
   width: 100%;
 }
@@ -703,6 +709,9 @@ img {
     gap: 24px;
     padding-top: 40px;
     padding-bottom: 120px;
+  }
+  .step-content {
+    display: block;
   }
   .main-section .main-section__inner {
     display: flex;
