@@ -1059,6 +1059,11 @@ img {
   font-size: 14px;
   line-height: 1.4;
 }
+.second-step__content {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .second-step__title {
   font-size: 20px;
   font-weight: 400;
@@ -1109,12 +1114,14 @@ img {
 @media screen and (min-width: 1440px) {
   .second-step {
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 40px;
-    border-top: 1px solid var(--white-20, #4f4f51);
   }
   .second-step .second-step__progressbar__wrapper {
     display: none;
+  }
+  .second-step__content {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--white-20, #4f4f51);
   }
   .second-step__title {
     font-size: 24px;
