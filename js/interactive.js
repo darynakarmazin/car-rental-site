@@ -21,3 +21,11 @@ proceedButtons.forEach((button) => {
   });
 });
 document.getElementById("step-1").classList.add("active");
+
+const tabs = document.querySelectorAll(".third-step__list > li");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+  });
+});
