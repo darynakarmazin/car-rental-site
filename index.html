@@ -371,13 +371,84 @@
             <div class="fourth-step__content">
               <h2 class="fourth-step__title">Confirming Order</h2>
             </div>
-            <form action=""></form>
-            <div class="fourth-step__result"></div>
-            <input type="checkbox" name="" id="" />
-            <button class="accent-btn submit-btn" type="button">
-              Pay Cash
-            </button>
-            <button class="accent-btn" type="button">Pay Now</button>
+            <form id="contactForm" class="fourth-step__form">
+              <div class="fourth-step__wrapper">
+                <label class="required">
+                  <span>First Name</span>
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your First Name"
+                  />
+                </label>
+                <label class="required">
+                  <span>Last Name</span>
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your Last Name"
+                  />
+                </label>
+                <label id="phone-label" class="required">
+                  <span>Phone number</span>
+                  <input
+                    autocomplete="off"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+1 (555) 000-0000"
+                  />
+                </label>
+                <label class="required">
+                  <span>Email</span>
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="olivia@untitledui.com"
+                  />
+                </label>
+              </div>
+              <div class="fourth-step__result">
+                <ul>
+                  <li>
+                    <p>Date</p>
+                    <span>Jan 1 | 08:00 - Jan 2 | 20:00</span>
+                  </li>
+                  <li>
+                    <p>Location</p>
+                    <span>Bratislava Bus... - Bratislava Bus...</span>
+                  </li>
+                  <li>
+                    <p>Volkswagen Touareg</p>
+                    <span>32,98 EUR</span>
+                  </li>
+                  <li>
+                    <p>Basic Insurance</p>
+                    <span>15 EUR</span>
+                  </li>
+                </ul>
+                <div class="result">
+                  <p>Total</p>
+                  <p>62,98 EUR</p>
+                </div>
+              </div>
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" id="terms" />
+                <span>I accept the terms & conditions</span>
+              </label>
+              <div class="fourth-step__buttons">
+                <button class="accent-btn submit-btn" type="submit">
+                  Pay Cash
+                </button>
+                <button class="accent-btn" type="submit">Pay Now</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

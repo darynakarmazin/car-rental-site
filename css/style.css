@@ -1658,6 +1658,168 @@ img {
   line-height: 1.5;
   margin-bottom: 24px;
 }
+.fourth-step__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+.fourth-step__form .fourth-step__wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+.fourth-step__form .fourth-step__wrapper label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fourth-step__form .fourth-step__wrapper label span {
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding-right: 7px;
+  position: relative;
+}
+.fourth-step__form .fourth-step__wrapper label.required span::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-image: url(../assets/icons/Asterisk.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.fourth-step__form .fourth-step__wrapper label input {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--white-20, #4f4f51);
+  box-shadow: 0px 1px 2px 0px
+    var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+  color: var(--white-80, #d3d3d3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.fourth-step__form .fourth-step__wrapper label#phone-label input {
+  padding-left: 95px;
+}
+.fourth-step__form .fourth-step__wrapper label#phone-label {
+  position: relative;
+}
+.fourth-step__form .fourth-step__wrapper label#phone-label::before {
+  position: absolute;
+  content: "US";
+  padding-top: 2px;
+  width: 47px;
+  height: 24px;
+  color: var(--white-80, #d3d3d3);
+  top: 50%;
+  left: 28px;
+  background-image: url("../assets/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+}
+.fourth-step__form .fourth-step__wrapper label input::placeholder {
+  overflow: hidden;
+  color: var(--white-50, #919192);
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.fourth-step__result {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+}
+.fourth-step__result > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5px;
+}
+.fourth-step__result > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fourth-step__result > ul > li > p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.fourth-step__result > ul > li > span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+}
+.fourth-step__result .result {
+  padding-top: 8px;
+  border-top: 1px solid var(--white-20, #4f4f51);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.fourth-step__buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.fourth-step .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 32px;
+  position: relative;
+}
+.fourth-step .checkbox-label input[type="checkbox"] {
+  display: none;
+}
+.fourth-step .checkbox-label span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--white, #fefeff);
+  border-radius: 6px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.fourth-step .checkbox-label input[type="checkbox"]:checked + span::before {
+  background: var(--primary, #b68867);
+  border: 1px solid var(--primary, #b68867);
+}
+.fourth-step .checkbox-label input[type="checkbox"]:checked + span::after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translate(0, -50%);
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url(../assets/icons/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 @media screen and (min-width: 768px) {
   .fourth-step .fourth-step__progressbar {
