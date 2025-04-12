@@ -1825,7 +1825,12 @@ img {
   .fourth-step .fourth-step__progressbar {
     font-weight: 400;
     line-height: normal;
-    padding: 16px 0;
+    padding: 16px 0 24px;
+    margin-right: -32px;
+    margin-left: -32px;
+    border-top: 1px solid var(--white-20, #4f4f51);
+    border-bottom: 1px solid var(--white-20, #4f4f51);
+    background: var(--white-05, #1e1e20);
   }
   .fourth-step .fourth-stepp__progressbar li {
     padding-top: 36px;
@@ -1854,6 +1859,7 @@ img {
   .fourth-step__result {
     margin-top: -62px;
     height: fit-content;
+    width: calc((100% - 32px) / 2);
   }
 }
 
@@ -1869,5 +1875,17 @@ img {
   }
   .fourth-step__title {
     font-size: 24px;
+  }
+  .fourth-step__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth-step__form .fourth-step__wrapper {
+    order: 0;
+    width: 100%;
+  }
+  .fourth-step__result {
+    margin-top: 0;
+    width: 100%;
   }
 }
