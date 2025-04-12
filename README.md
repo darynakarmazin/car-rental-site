@@ -15,3 +15,5 @@ approach. For formation, used Prettier. Used [Inter, Oxygen] Google fonts. Deplo
 ![Og-image](https://github.com/darynakarmazin/car-rental-site/blob/main/assets/images/og.png)
 
 Technology stack [HTML5, CSS, JavaScript]
+
+![Ligthouse](https://github.com/darynakarmazin/car-rental-site/blob/main/assets/images/ligthouse.png)
