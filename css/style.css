@@ -933,6 +933,8 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+}
+.submit-btn {
   background: var(--primary-20, rgba(182, 136, 103, 0.2));
 }
 
