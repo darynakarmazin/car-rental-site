@@ -1833,6 +1833,14 @@ img {
   .fourth-step__title {
     margin-bottom: 32px;
   }
+  .fourth-step__buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .fourth-step__buttons button {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1841,6 +1849,9 @@ img {
   }
   .fourth-step .fourth-step__progressbar {
     display: none;
+  }
+  .fourth-step__content {
+    padding: 0;
   }
   .fourth-step__title {
     font-size: 24px;
