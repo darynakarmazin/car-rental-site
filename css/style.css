@@ -992,7 +992,7 @@ img {
 }
 .second-step .second-step__progressbar li {
   width: 25%;
-  padding-top: 25px;
+  padding-top: 31px;
   position: relative;
 }
 .second-step .second-step__progressbar li:first-child::after {
@@ -1000,7 +1000,7 @@ img {
   position: absolute;
   width: 50%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   right: 0;
   transform: translate(0, -50%);
   background-color: #b68867;
@@ -1012,7 +1012,7 @@ img {
   position: absolute;
   width: 100%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #4f4f51;
@@ -1022,7 +1022,7 @@ img {
   position: absolute;
   width: 50%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   left: 0;
   transform: translate(0, -50%);
   background-color: #4f4f51;
@@ -1032,7 +1032,7 @@ img {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(../assets/icons/indicators.svg);
@@ -1045,7 +1045,7 @@ img {
   position: absolute;
   width: 12px;
   height: 12px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #4f4f51;
@@ -1200,23 +1200,6 @@ img {
   .second-step .second-step__progressbar li {
     padding-top: 36px;
   }
-  .second-step .second-step__progressbar li:first-child::after {
-    top: 12px;
-  }
-  .second-step
-    .second-step__progressbar
-    li:not(:first-child):not(:last-child)::after {
-    top: 12px;
-  }
-  .second-step .second-step__progressbar li:last-child::after {
-    top: 12px;
-  }
-  .second-step .second-step__progressbar li:first-child::before {
-    top: 12px;
-  }
-  .second-step .second-step__progressbar li:not(:first-child)::before {
-    top: 12px;
-  }
   .second-step__option {
     gap: 24px;
     padding: 0 32px;
@@ -1318,7 +1301,7 @@ img {
 }
 .third-step .third-step__progressbar li {
   width: 25%;
-  padding-top: 25px;
+  padding-top: 31px;
   position: relative;
 }
 .third-step .third-step__progressbar li:first-child::after {
@@ -1326,7 +1309,7 @@ img {
   position: absolute;
   width: 50%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   right: 0;
   transform: translate(0, -50%);
   background-color: #b68867;
@@ -1336,7 +1319,7 @@ img {
   position: absolute;
   width: 100%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #b68867;
@@ -1348,7 +1331,7 @@ img {
   position: absolute;
   width: 100%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #4f4f51;
@@ -1358,7 +1341,7 @@ img {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(../assets/icons/Indicators-2.svg);
@@ -1371,7 +1354,7 @@ img {
   position: absolute;
   width: 50%;
   height: 1px;
-  top: 6px;
+  top: 12px;
   left: 0;
   transform: translate(0, -50%);
   background-color: #4f4f51;
@@ -1381,7 +1364,7 @@ img {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(../assets/icons/indicators.svg);
@@ -1396,7 +1379,7 @@ img {
   position: absolute;
   width: 12px;
   height: 12px;
-  top: 6px;
+  top: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #4f4f51;
@@ -1527,31 +1510,6 @@ img {
   .third-step .third-step__progressbar li {
     padding-top: 36px;
   }
-  .third-step .third-step__progressbar li:first-child::after {
-    top: 12px;
-  }
-  .third-step .third-step__progressbar li:nth-child(2)::after {
-    top: 12px;
-  }
-  .third-step
-    .third-step__progressbar
-    li:not(:first-child):not(:nth-child(2)):not(:last-child)::after {
-    top: 12px;
-  }
-  .third-step .third-step__progressbar li:first-child:before {
-    top: 12px;
-  }
-  .third-step .third-step__progressbar li:last-child::after {
-    top: 12px;
-  }
-  .third-step .third-step__progressbar li:nth-child(2):before {
-    top: 12px;
-  }
-  .third-step
-    .third-step__progressbar
-    li:not(:first-child):not(:nth-child(2))::before {
-    top: 12px;
-  }
   .third-step__option {
     gap: 24px;
     padding: 0 32px;
@@ -1599,42 +1557,128 @@ img {
     font-size: 32px;
     font-weight: 600;
   }
-  .third-step__list .third-step__item-subtitle {
-    width: 100%;
-    text-align: left;
+}
+
+/* fourth-step */
+.fourth-step .fourth-step__progressbar {
+  display: flex;
+  padding: 24px 0 16px;
+  color: var(--white-50, #919192);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.fourth-step .fourth-step__progressbar li {
+  width: 25%;
+  padding-top: 31px;
+  position: relative;
+}
+.fourth-step .fourth-step__progressbar li:first-child::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: 12px;
+  right: 0;
+  transform: translate(0, -50%);
+  background-color: #b68867;
+}
+.fourth-step
+  .fourth-step__progressbar
+  li:not(:first-child):not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b68867;
+}
+.fourth-step .fourth-step__progressbar li:last-child::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: 12px;
+  left: 0;
+  transform: translate(0, -50%);
+  background-color: #4f4f51;
+}
+.fourth-step .fourth-step__progressbar li:first-child:before,
+.fourth-step .fourth-step__progressbar li:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../assets/icons/Indicators-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.fourth-step .fourth-step__progressbar li:nth-child(3):before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../assets/icons/indicators.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.fourth-step .fourth-step__progressbar li:last-child::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4f4f51;
+  border-radius: 50%;
+  z-index: 2;
+}
+.fourth-step__content {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.fourth-step__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .fourth-step .fourth-step__progressbar {
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px 0;
   }
-  .third-step__list .third-step__item-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  .fourth-step .fourth-stepp__progressbar li {
+    padding-top: 36px;
   }
-  .third-step__list .third-step__item-list > li {
-    font-size: 14px;
-    line-height: 1.4;
-    padding-left: 24px;
-    position: relative;
+  .fourth-step__title {
+    margin-bottom: 32px;
   }
-  .third-step__list .third-step__item-list > li::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background-image: url(../assets/icons/check-circle-broken.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+@media screen and (min-width: 1440px) {
+  .fourth-step {
+    min-width: 416px;
   }
-  .third-step__list .third-step__item-list > li.red-sign::before {
-    background-image: url(../assets/icons/alert-circle.svg);
+  .fourth-step .fourth-step__progressbar {
+    display: none;
   }
-  .third-step__list .third-step__item-list > li.green-sign::before {
-    background-image: url(../assets/icons/green-circle-broken.svg);
-  }
-  .third-step__item-note {
-    color: var(--white-30, #656566);
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.4;
+  .fourth-step__title {
+    font-size: 24px;
   }
 }
