@@ -626,6 +626,16 @@ img {
   align-items: center;
   border-radius: 8px;
   background: var(--primary, #b68867);
+  transition: var(--transition-dur-and-func);
+}
+.accent-btn:hover {
+  background: rgba(182, 136, 103, 0.7);
+}
+.accent-btn:focus {
+  background: #b68867;
+}
+.accent-btn:disabled {
+  background: rgba(182, 136, 103, 0.2);
 }
 
 @media screen and (min-width: 768px) {
